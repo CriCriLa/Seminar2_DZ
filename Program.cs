@@ -11,17 +11,33 @@
 // Задача 2. Выводит третью цифру заданного числа 
 // или сообщает что третьей цифры нет.
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num>=100)
+// {
+//     string NumStr = Convert.ToString(num);
+//     Console.WriteLine(NumStr[2]);
+// }
+// else
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }
+
+// Задача 3. Принимает на вход цифру, 
+// обозначающую день недели и проверяет является ли этот день выходным.
+
 Console.Clear();
-Console.Write("Введите число: ");
+Console.Write("Введите номер дня недели: ");
+int Day = Convert.ToInt32(Console.ReadLine());
 
-int num = Convert.ToInt32(Console.ReadLine());
-
-if (num>=100)
+if ((Day==6)||(Day==7))
 {
-    string NumStr = Convert.ToString(num);
-    Console.WriteLine(NumStr[2]);
+    Console.WriteLine("Ура! Это выходной!");
 }
-else
+else 
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine("Нет, это не выходной");
 }
